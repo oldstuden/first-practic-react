@@ -1,4 +1,5 @@
-import { ActivitiesStats } from './ActivitiesStats';
+import { ActivitiesStats } from './ActivitiesStats/ActivitiesStats';
+import { GlobalStyle } from './GlobalStyle';
 import { QuizForm } from './QuizForm';
 import { SearchBar } from './SearchBar';
 import user from './user.json';
@@ -15,6 +16,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <GlobalStyle />
     </div>
   );
 };
